@@ -8,17 +8,17 @@ import './App.css';
  컴포넌트 선언이 편하다.
 */
 function App() {
-  const [State, setState] = useState(0);
+  const [sec, setsec] = useState(0);
   useEffect(() => {
     // 마운트 : 컴포넌트가 최초로 렌더링을 거칠 때 거치는 과정이다. props와 state가 변경될 때는 마운트 과정을 거치지 않는다.
     const id = setInterval(() => {
-      setState(s => s + 1);
+      setsec(s => s + 1);
     }, 1000);
     return () => clearInterval(id);  //언마운트 : 컴포넌트가 삭제될떄 거치는 과정
   }, []); 
   return (
    <div>
-    {<h1>웹사이트를 이용 하신지 {State}초 지나셨습니다 </h1>}
+    <h1>웹사이트를 이용 하신지 {sec}초 지나셨습니다 </h1>
    </div>
   );
 }
@@ -37,6 +37,6 @@ function App() {
       내용
     }
   }
-  
+
   */
 export default App;
