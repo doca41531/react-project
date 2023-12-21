@@ -1,6 +1,15 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+/*
+ react를 쓰는 이유: Virtual DOM 기존 dom은 개 dom을 그리면 다시 새로 그리는 비효율적이라고 볼수 있지만 Virtual DOM은 바뀐 부분만 다시 업데이트 한다
+                   Client-Side-Rendering 기본적으로 html은 비어있고 Javascript 코드를 실행해서 DOM을 그린다.
+                  페이지에서 필요한 부분만 변경하게 하기 때문에, 모바일 네트워크에서도 빠른 속도로 렌더링이 가능하다.
 
+jsx 란 JavaScript에 XML을 추가하여 확장한 문법이다.
+특징 :  JS 코드 안에서 UI관련 작업을 할 수 있기 때문에 시각적으로 더 도움이 된다.
+        React element 를 생성한다. React element는 브라우저 DOM element와 달리 일반 객체이다.
+        React가 더욱 도움이 되는 에러 및 경고 메시지를 표시할 수 있게 해준다.
+*/
 /* 
  함수형 컴포넌트 
  state, lifeCycle 관련 기능사용 불 가능하다 하지만 hook을 통해 사용 가능
